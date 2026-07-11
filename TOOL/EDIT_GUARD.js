@@ -1,8 +1,5 @@
-export function EDIT_GUARD(meta) {
-
-    if (!meta.original) {
-        return "BLOCKED – Nicht iki1uc Original";
-    }
-
-    return "OK – Editierbar";
+export function EDIT_GUARD(meta){
+    return meta.original
+        ? "OK – Editierbar"
+        : "BLOCKED – Nicht iki1uc Original";
 }
