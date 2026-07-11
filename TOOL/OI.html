@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>OI – TOOLOMAT / iki1uc</title>
+
+<!-- Signatur -->
+<meta name="signature" content="IKI1UC-OI">
+
+<!-- RESPO-ID -->
+<meta name="respo-id" content="60000-OI">
+
+<!-- Vorstufe -->
+<script src="../OR_PRE_STAGE.js"></script>
+
+<!-- Systemmodule -->
+<script src="../NAME.js"></script>
+<script src="../LAGE.js"></script>
+<script src="../GEOMETRIA.js"></script>
+<script src="../ORBIT.js"></script>
+<script src="../ARBIT.js"></script>
+<script src="../AUSTAUSCH.js"></script>
+<script src="../RESPO_INTEGRATION.js"></script>
+
+<style>
+body{background:#000;color:#0f0;font-family:monospace;padding:20px;}
+h1{color:#6cf;}
+</style>
+</head>
+
+<body>
+
+<h1>OI – TOOLOMAT / iki1uc</h1>
+
+<pre id="out">Bereit...</pre>
+
+<script>
+const meta = OR_PRE_STAGE("OI");
+const orbit = ORBIT(1,0.7,0.4,0.9);
+const arbit = ARBIT(1,0.7,0.4,0.9);
+const respo = RESPO_INTEGRATION(meta, orbit, arbit);
+
+document.getElementById("out").textContent =
+`=== OI – SYSTEM ===
+
+Signatur: ${meta.signature}
+Original: ${meta.original}
+RESPO-ID: ${respo.id}
+
+Konstellation: ${respo.konstellation}
+Austausch: ${respo.austausch}
+Status: ${respo.status}
+`;
+</script>
+
+</body>
+</html>
 
