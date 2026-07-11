@@ -1,6 +1,4 @@
-/* LAGE.js – Lagezuordnung für TOOL / ORBIT / ARBIT */
-
-export function LAGE(Phi, phi, phi2, phiinfty) {
+export function LAGE(Phi, phi, phi2, phiinfty){
     return {
         x: Phi * 10,
         y: phi * 10,
@@ -9,4 +7,3 @@ export function LAGE(Phi, phi, phi2, phiinfty) {
         lage_id: "L-" + Phi + "-" + phi + "-" + phi2 + "-" + phiinfty
     };
 }
-
