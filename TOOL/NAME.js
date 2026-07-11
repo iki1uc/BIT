@@ -1,6 +1,4 @@
-/* NAME.js – Systemnamen für TOOL / RESPO / ORBIT */
-
-export function NAME(file) {
+export function NAME(file){
     return {
         core: "iki1uc",
         modul: file,
