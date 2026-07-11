@@ -1,5 +1,4 @@
-export function ORBIT(Phi, phi, phi2, phiinfty) {
-
+export function ORBIT(Phi, phi, phi2, phiinfty){
     return {
         axis: { Phi, phi, phi2, phiinfty },
         orbit: phi * 10,
